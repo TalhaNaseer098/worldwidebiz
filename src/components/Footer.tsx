@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import footerLogo from '../assets/imgfolder/worldwidefooterlogo.png'
 import footerBgImg from '../assets/imgfolder/footerbottomimg.png'
 
@@ -28,6 +28,16 @@ const socialIcons = [
 export default function Footer() {
   const { pathname } = useLocation()
   const isHome = pathname === '/'
+  const navigate = useNavigate()
+
+  const handleNavClick = (hash: string) => (e: React.MouseEvent) => {
+    e.preventDefault()
+    if (isHome) {
+      document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate('/', { state: { scrollTo: hash } })
+    }
+  }
 
   return (
     <footer className="footer">
@@ -57,8 +67,9 @@ export default function Footer() {
               {navLinks.map((link) => (
                 <a
                   key={link.label}
-                  href={isHome ? `#${link.hash}` : `/#${link.hash}`}
+                  href={isHome ? `#${link.hash}` : '/'}
                   className="footer__nav-link"
+                  onClick={handleNavClick(link.hash)}
                 >{link.label}</a>
               ))}
             </nav>

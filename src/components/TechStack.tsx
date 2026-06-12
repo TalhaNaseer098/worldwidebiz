@@ -1,6 +1,7 @@
 import techStackIcon from '../assets/imgfolder/servicestopimg.png'
 import serviceShineImg from '../assets/imgfolder/serviceshineimg.png'
 import phoneIcon from '../assets/imgfolder/phoneicon.png'
+import { scrollTo } from '../utils/scroll'
 
 const techRows = [
   { label: 'Voice AI',           techs: ['Vapi', 'Retell', 'Bland', 'Eleven Labs', 'Whisper'] },
@@ -40,7 +41,7 @@ export default function TechStack() {
           ))}
         </div>
 
-        <a href="#get-started" className="techstack__cta">
+        <a href="#get-started" className="techstack__cta" onClick={scrollTo('get-started')}>
           <img src={phoneIcon} alt="" className="techstack__cta-icon" />
           Book a Free Strategy Call
         </a>

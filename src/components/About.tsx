@@ -1,4 +1,5 @@
 import phoneIcon from '../assets/imgfolder/phoneicon.png'
+import { scrollTo } from '../utils/scroll'
 import aiFirstIcon from '../assets/imgfolder/AI-FirstApproach.png'
 import customSolutionsIcon from '../assets/imgfolder/CustomSolutions.png'
 import provenProcessIcon from '../assets/imgfolder/ProvenProcess.png'
@@ -50,7 +51,7 @@ export default function About() {
           ))}
         </div>
 
-        <a href="#get-started" className="about__cta">
+        <a href="#get-started" className="about__cta" onClick={scrollTo('get-started')}>
           <img src={phoneIcon} alt="" className="about__cta-icon" />
           Book a Free Strategy Call
         </a>

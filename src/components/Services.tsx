@@ -1,4 +1,5 @@
 import phoneIcon from '../assets/imgfolder/phoneicon.png'
+import { scrollTo } from '../utils/scroll'
 import servicestopImg from '../assets/imgfolder/servicestopimg.png'
 import serviceShineImg from '../assets/imgfolder/serviceshineimg.png'
 import aiVoiceCardImg from '../assets/imgfolder/Ai Voice Icon.png'
@@ -118,7 +119,7 @@ export default function Services() {
 
         </div>
 
-        <a href="#get-started" className="services__cta">
+        <a href="#get-started" className="services__cta" onClick={scrollTo('get-started')}>
           <img src={phoneIcon} alt="" className="services__cta-icon" />
           Book a Free Strategy Call
         </a>

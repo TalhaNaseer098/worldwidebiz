@@ -2,6 +2,7 @@ import bannerImg from '../assets/imgfolder/bannerrightimg.png'
 import phoneIcon from '../assets/imgfolder/phoneicon.png'
 import bannerLine from '../assets/imgfolder/bannerline.png'
 import checkboxIcon from '../assets/imgfolder/Vectorcheckbox.png'
+import { scrollTo } from '../utils/scroll'
 
 export default function Hero() {
   return (
@@ -22,7 +23,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <a href="#get-started" className="hero__cta">
+          <a href="#get-started" className="hero__cta" onClick={scrollTo('get-started')}>
             <img src={phoneIcon} alt="" className="hero__cta-icon" />
             Book a Free Strategy Call
           </a>
