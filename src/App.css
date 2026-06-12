@@ -1,0 +1,26 @@
+/* Global section styles */
+
+.hero-about-wrap {
+  position: relative;
+  background: var(--bg-primary);
+}
+
+.hero-about-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1580px;
+  background-image: url(/src/assets/imgfolder/overlayimgbannerabout.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-about-wrap > * {
+  position: relative;
+  z-index: 1;
+}

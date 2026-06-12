@@ -1,0 +1,142 @@
+/* =============================================
+   GLOBAL HOVER ANIMATIONS
+   ============================================= */
+
+/* === SHIMMER KEYFRAME === */
+@keyframes shimmer-sweep {
+  0%   { left: -80%; }
+  100% { left: 160%; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 18px rgba(0, 142, 249, 0.3), 0 0 36px rgba(0, 208, 83, 0.12); }
+  50%       { box-shadow: 0 0 28px rgba(0, 142, 249, 0.5), 0 0 52px rgba(0, 208, 83, 0.22); }
+}
+
+/* =============================================
+   CTA BUTTONS — shimmer + lift + glow
+   ============================================= */
+.hero__cta,
+.about__cta,
+.services__cta,
+.techstack__cta,
+.header__cta {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.hero__cta:hover,
+.about__cta:hover,
+.services__cta:hover,
+.techstack__cta:hover,
+.header__cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0, 142, 249, 0.4), 0 0 24px rgba(0, 208, 83, 0.18);
+}
+
+/* Shimmer sweep */
+.hero__cta::after,
+.about__cta::after,
+.services__cta::after,
+.techstack__cta::after,
+.header__cta::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+  transform: skewX(-18deg);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hero__cta:hover::after,
+.about__cta:hover::after,
+.services__cta:hover::after,
+.techstack__cta:hover::after,
+.header__cta:hover::after {
+  animation: shimmer-sweep 0.55s ease forwards;
+}
+
+/* Packages button */
+.packages__btn {
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease !important;
+}
+
+.packages__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 142, 249, 0.3);
+  background: rgba(255, 255, 255, 0.07) !important;
+}
+
+.packages__btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(-18deg);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.packages__btn:hover::after {
+  animation: shimmer-sweep 0.55s ease forwards;
+}
+
+/* =============================================
+   FAQ ITEMS
+   ============================================= */
+.faq__item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.faq__item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 142, 249, 0.14);
+}
+
+/* =============================================
+   SOCIAL ICONS
+   ============================================= */
+.footer__social-icon {
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.footer__social-icon:hover {
+  transform: scale(1.15) translateY(-3px) !important;
+  box-shadow: 0 8px 24px rgba(0, 142, 249, 0.35) !important;
+  opacity: 1 !important;
+}
+
+/* =============================================
+   TECHSTACK PILLS
+   ============================================= */
+.techstack__pill {
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.techstack__pill:hover {
+  transform: translateY(-2px);
+  background: #2a2a2a;
+  box-shadow: 0 4px 14px rgba(0, 142, 249, 0.18);
+}
+
+/* =============================================
+   FOOTER NAV LINKS
+   ============================================= */
+.footer__nav-link {
+  transition: opacity 0.2s, transform 0.2s ease !important;
+}
+
+.footer__nav-link:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+

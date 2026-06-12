@@ -1,0 +1,132 @@
+.process {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+  background: var(--bg-primary);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.process__inner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -160px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Header row */
+.process__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.process__heading {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 123.76%;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.process__desc {
+  width: 596px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 139.42%;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+/* Cards grid */
+.process__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.process__card {
+  position: relative;
+  background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.8) -2.45%, rgba(22, 22, 22, 0.9) 102.09%);
+  backdrop-filter: blur(23px);
+  -webkit-backdrop-filter: blur(23px);
+  border-radius: 20px;
+  padding: 25px 20px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.process__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(135deg, #00d053 0%, #008ef9 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Top-right icon */
+.process__card-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Card title */
+.process__card-title {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 139.42%;
+  color: #ffffff;
+  width: 268px;
+}
+
+/* Bullet list */
+.process__card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.process__card-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 250%;
+  color: #ffffff;
+}
+
+.process__card-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #008ef9;
+  flex-shrink: 0;
+}

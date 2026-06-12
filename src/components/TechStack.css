@@ -1,0 +1,191 @@
+.techstack {
+  padding-top: 100px;
+  padding-bottom: 633px;
+  position: relative;
+  background: var(--bg-primary);
+}
+
+.techstack__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading — same pattern as Services */
+.techstack__heading-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  padding-top: 170px;
+}
+
+.techstack__shine-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1206px;
+  height: 417px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.techstack__heading-wrap .techstack__icon,
+.techstack__heading-wrap .techstack__heading {
+  position: relative;
+  z-index: 1;
+}
+
+.techstack__icon {
+  width: 74px;
+  height: auto;
+  object-fit: cover;
+}
+
+.techstack__heading {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 123.76%;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Main box */
+.techstack__box {
+  position: relative;
+  width: 1200px;
+  background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.5) -2.45%, rgba(22, 22, 22, 0.8) 102.09%);
+  backdrop-filter: blur(125px);
+  -webkit-backdrop-filter: blur(125px);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.techstack__box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(255, 255, 255, 0.85) 0deg,
+    rgba(255, 255, 255, 0.85) 80deg,
+    rgba(255, 255, 255, 0.0) 130deg,
+    rgba(255, 255, 255, 0.0) 195deg,
+    #22c55e 225deg,
+    #22c55e 265deg,
+    rgba(255, 255, 255, 0.5) 305deg,
+    rgba(255, 255, 255, 0.85) 360deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.techstack__row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 22px 40px;
+  border-bottom: 1px solid #272727;
+}
+
+.techstack__row--last {
+  border-bottom: none;
+}
+
+.techstack__label {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 139.42%;
+  color: #ffffff;
+  min-width: 210px;
+  flex-shrink: 0;
+}
+
+.techstack__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.techstack__pill {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 139.42%;
+  color: #ffffff;
+  padding: 11px 24px;
+  background: #1b1b1b;
+  border-radius: 63px;
+  white-space: nowrap;
+}
+
+/* CTA — same as Services */
+.techstack__cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 22px 64px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  text-shadow: 0px 5px 10px rgba(255, 255, 255, 0.13);
+  background: #192d5d70;
+  box-shadow: 0px 7px 28px rgba(104, 1, 255, 0.12);
+  border-radius: 20px;
+  border: none;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+}
+
+.techstack__cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(255, 255, 255, 0.85) 0deg,
+    rgba(255, 255, 255, 0.85) 80deg,
+    rgba(255, 255, 255, 0.0) 130deg,
+    rgba(255, 255, 255, 0.0) 195deg,
+    #22c55e 225deg,
+    #22c55e 265deg,
+    rgba(255, 255, 255, 0.5) 305deg,
+    rgba(255, 255, 255, 0.85) 360deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.techstack__cta:hover {
+  box-shadow: 0px 7px 36px rgba(104, 1, 255, 0.28);
+}
+
+.techstack__cta-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}

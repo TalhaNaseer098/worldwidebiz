@@ -1,0 +1,117 @@
+.getstarted {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background: var(--bg-primary);
+}
+
+/* Main box with gradient border */
+.getstarted__box {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.8) -2.45%, rgba(22, 22, 22, 0.9) 102.09%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.getstarted__box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(353deg, #008ef9 0%, #00d053 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Left panel */
+.getstarted__left {
+  position: relative;
+  flex-shrink: 0;
+  width: 50%;
+  padding: 80px 60px 0 80px;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.getstarted__heading {
+  width: 507px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 111%;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.getstarted__desc {
+  width: 516px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 139.42%;
+  color: #b8b8b8;
+}
+
+.getstarted__img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 628px;
+  height: 327px;
+  object-fit: contain;
+}
+
+/* Right panel — HubSpot embed */
+.getstarted__right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 40px 40px 0;
+}
+
+.getstarted__form-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.getstarted__form-header {
+  text-align: center;
+  padding: 40px 40px 20px;
+  order: -1;
+}
+
+.getstarted__form-title {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 123.76%;
+  color: #00d053;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.getstarted__form-subtitle {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #ffffff;
+  width: 440px;
+  margin: 0 auto;
+}
+
+.meetings-iframe-container {
+  flex: 1;
+  min-height: 0;
+}

@@ -1,0 +1,350 @@
+.packages {
+  padding-top: 350px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+  background: #000000;
+}
+
+.packages__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading — exact same as Services / TechStack */
+.packages__heading-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  padding-top: 170px;
+}
+
+.packages__shine-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1206px;
+  height: 417px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.packages__heading-wrap .packages__icon,
+.packages__heading-wrap .packages__heading {
+  position: relative;
+  z-index: 1;
+}
+
+.packages__icon {
+  width: 74px;
+  height: auto;
+  object-fit: cover;
+}
+
+.packages__heading {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 123.76%;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Cards grid */
+.packages__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+/* Card wrapper — handles popular badge overflow */
+.packages__card-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.packages__card-wrap--popular {
+  padding-top: 0;
+}
+
+/* Most Popular badge */
+.packages__popular-badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 139.42%;
+  color: #000000;
+  padding: 11px 24px;
+  background: linear-gradient(90deg, #008ef9 0%, #00d053 100%);
+  border-radius: 63px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* Center card mask background */
+.packages__card-mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Card base */
+.packages__card {
+  position: relative;
+  flex: 1;
+  background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.8) -2.45%, rgba(22, 22, 22, 0.9) 102.09%);
+  backdrop-filter: blur(23px);
+  -webkit-backdrop-filter: blur(23px);
+  border-radius: 20px;
+  padding: 28px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+}
+
+/* Standard card border (1st & 3rd) */
+.packages__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(180deg, #008ef9 0%, #00d053 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 3rd card grey border */
+.packages__card--grey::before {
+  background: #919191;
+}
+
+/* Popular card border (center) */
+.packages__card--popular::before {
+  background: conic-gradient(from 61.25deg at 52.47% 52.87%, #0ba2f7 0deg, #08f969 76.88deg, #100bf7 152.31deg, #0ba2f7 360deg);
+}
+
+/* Top section — fixed height keeps button aligned across all cards */
+.packages__card-top {
+  position: relative;
+  z-index: 1;
+  min-height: 0;
+  margin-bottom: 34px;
+}
+
+/* Name row */
+.packages__name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 29px;
+}
+
+.packages__name-icon {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.packages__name-icon--foundation {
+  width: 13px;
+  height: 13px;
+}
+
+.packages__name-icon--growth {
+  width: 10px;
+  height: 13px;
+}
+
+.packages__name-icon--workforce {
+  width: 13px;
+  height: 13px;
+}
+
+.packages__name {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 123.76%;
+  color: #ffffff;
+}
+
+/* Price */
+.packages__price {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 123.76%;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.packages__retainer {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* Description */
+.packages__desc {
+  width: 400px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 21px;
+}
+
+/* Ensure all card content stays above mask */
+.packages__btn,
+.packages__divider,
+.packages__features,
+.packages__timeline {
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA Button */
+.packages__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px 24px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  text-shadow: 0 5px 10px rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 45px;
+  transition: background 0.25s;
+}
+
+.packages__btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(255, 255, 255, 0.85) 0deg,
+    rgba(255, 255, 255, 0.85) 80deg,
+    rgba(255, 255, 255, 0.0) 130deg,
+    rgba(255, 255, 255, 0.0) 195deg,
+    #22c55e 225deg,
+    #22c55e 265deg,
+    rgba(255, 255, 255, 0.5) 305deg,
+    rgba(255, 255, 255, 0.85) 360deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.packages__btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Divider */
+.packages__divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+}
+
+/* Features list */
+.packages__features {
+  list-style: none;
+  margin: 0 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+}
+
+.packages__feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+
+.packages__feature-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Timeline */
+.packages__timeline {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 28px;
+}
+
+/* Footer note */
+.packages__footnote {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #b8b8b8;
+  text-align: center;
+  max-width: 100%;
+}
