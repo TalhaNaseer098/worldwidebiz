@@ -1,4 +1,5 @@
 import servicestopImg from '../assets/imgfolder/servicestopimg.png'
+import { scrollTo } from '../utils/scroll'
 import serviceShineImg from '../assets/imgfolder/serviceshineimg.png'
 import foundationStar from '../assets/imgfolder/foundationleftsidestar.png'
 import maskCenterBox from '../assets/imgfolder/maskcenterbox.png'
@@ -113,7 +114,7 @@ export default function Packages() {
                 </div>
 
                 {/* CTA Button */}
-                <button className="packages__btn">{pkg.button}</button>
+                <button className="packages__btn" onClick={scrollTo('get-started')}>{pkg.button}</button>
 
                 {/* Features */}
                 <ul className="packages__features">
