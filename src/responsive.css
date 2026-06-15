@@ -741,7 +741,9 @@ img.coldemail-bg {
   /* -- Packages -- */
   .packages { padding-top: 0px; }
   .packages__grid { grid-template-columns: 1fr; gap: 40px; }
-  .packages__card { width: 65%; margin: 0 auto; }
+  .packages__card { width: 65%; margin: 0 auto; border-radius: 10px; }
+  .packages__card::before { border-radius: 10px; }
+  .packages__name-row { margin-bottom: 20px; }
   .packages__footnote { max-width: 80%; }
   .packages__heading { font-size: 48px; }
   .packages__shine-img { width: 500px; height: 417px; }
@@ -1121,47 +1123,6 @@ img.coldemail-bg {
   .footer__copyright { font-size: 13px; }
   .footer__link { font-size: 13px; }
   .footer__social-row { flex-wrap: wrap; gap: 10px; }
-}
-
-
-.packages__name-row {
-    margin-bottom: 20px;
-}
-
-.packages__popular-badge {
-    padding: 8px 22px;
-}
-
-button.packages__btn {
-    margin-bottom: 30px;
-    padding: 13px 24px;
-    font-size: 16px;
-    line-height: 20px;
-    border-radius: 12px;
-}
-
-.packages__btn::before {
-    border-radius: 12px;
-}
-
-button.packages__btn {
-    margin-bottom: 30px;
-    padding: 13px 24px;
-    font-size: 16px;
-    line-height: 20px;
-    border-radius: 12px;
-}
-
-.packages__btn::before {
-    border-radius: 12px;
-}
-
-.packages__card {
-    border-radius: 10px;
-}
-
-.packages__card::before {
-    border-radius: 10px;
 }
 
 
