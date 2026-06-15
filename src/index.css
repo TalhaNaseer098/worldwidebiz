@@ -678,7 +678,7 @@ img {
 }
 
 .services__card--small .services__card-img-wrap {
-  height: 200px;
+  height: 145px;
   padding: 0px;
 }
 
@@ -716,11 +716,11 @@ img {
 
 .coldemail-bg {
   position: absolute;
-  top: 44px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   width: 184px;
-  height: 93px;
+  height: 70px;
   object-fit: contain;
 }
 
