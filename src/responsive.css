@@ -1123,19 +1123,6 @@ img.coldemail-bg {
   .footer__social-row { flex-wrap: wrap; gap: 10px; }
 }
 
-img.ailead-bg {
-    top: 0px;
-    width: 100%;
-}
-
-.services__card-img-wrap.services__card-img-wrap--lead {
-    height: 140px;
-}
-
-img.techstack__cta-icon {
-    width: 18px;
-    animation: auto;
-}
 
 .packages__name-row {
     margin-bottom: 20px;
