@@ -206,7 +206,7 @@ img {
    ============================================= */
 
 .hero {
-  padding-top: 200px;
+  padding-top: 170px;
   padding-bottom: 250px;
   background: linear-gradient(to bottom, var(--bg-hero) 55%, transparent 100%);
 }
