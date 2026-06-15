@@ -53,10 +53,12 @@ export default function Header() {
             </nav>
           )}
 
-          <a href="#get-started" className="header__cta" onClick={scrollTo('get-started')}>
-            <img src={phoneIcon} alt="" className="header__cta-icon" />
-            Book a Call
-          </a>
+          {!isPolicy && (
+            <a href="#get-started" className="header__cta" onClick={scrollTo('get-started')}>
+              <img src={phoneIcon} alt="" className="header__cta-icon" />
+              Book a Call
+            </a>
+          )}
 
           {!isPolicy && (
             <button
