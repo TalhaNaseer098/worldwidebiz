@@ -257,7 +257,7 @@
 
   .services__card--small .services__card-img-wrap {
     height: 7.552vw;
-    min-height: 120px;
+    min-height: 6.25vw;
     padding: 0vw;
   }
   
@@ -638,23 +638,6 @@
 .header__cta--mobile { display: none; }
 
 /* ============================================================
-   RESPONSIVE — max-width: 1200px  (Small Desktop)
-   ============================================================ */
-@media (max-width: 1200px) {
-  .services__grid-bottom {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .services__grid-bottom .services__card {
-    padding: 30px 24px;
-  }
-  .services__card--small .services__card-img-wrap {
-    height: auto;
-    min-height: 140px;
-  }
-}
-
-/* ============================================================
    RESPONSIVE — max-width: 991px  (Tablet Landscape)
    ============================================================ */
 
@@ -718,8 +701,9 @@
 }
 
 img.coldemail-bg {
-    width: 90PX;
-    height: 60PX;
+    width: 90px;
+    height: 60px;
+    top: 40px;
 }
 
   /* -- TechStack -- */
@@ -913,7 +897,7 @@ img.coldemail-bg {
   .services__grid-bottom .services__card { padding: 0px 10px 20px; }
   .services__card--small .services__card-img-wrap { height: 140px; padding: 0px; }
   .ailead-bg { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 100%; height: 90px; object-fit: cover; }
-  .coldemail-bg { position: absolute; top: auto; bottom: 60px; left: 50%; transform: translateX(-50%); width: 100px; height: auto; object-fit: cover; }
+  .coldemail-bg { position: absolute; top: 10px; bottom: auto; left: 50%; transform: translateX(-50%); width: auto; height: 45px; object-fit: contain; }
   .services__card--large { padding: 36px 24px 32px 36px; }
   .services__card-title { font-size: 17px; padding: 24px 0 10px; }
   .services__cta { padding: 14px 32px; font-size: 16px; }
@@ -925,8 +909,8 @@ img.coldemail-bg {
       width: 100%;
   }
     img.coldemail-bg {
-      width: 50%;
-      height: auto;
+      width: auto;
+      height: 45px;
   }
 
   .services__grid-bottom {
@@ -1044,7 +1028,8 @@ img.coldemail-bg {
 }
 
 img.coldemail-bg {
-    width: 20%;
+    width: 100%;
+    height: 75px;
 }
 
 .services__card--small .services__card-img-wrap {
@@ -1090,6 +1075,7 @@ img.coldemail-bg {
   .packages__card { width: 100%; margin: 0 auto; }
   .packages__card-top { min-height: 0; margin-bottom: 26px; }
   .packages__popular-badge { font-size: 12px; padding: 8px 18px; }
+  .packages__card-wrap:first-child .packages__retainer { display: none; }
 
   /* -- FAQ -- */
   .faq { padding-top: 40px; padding-bottom: 60px; }
@@ -1103,7 +1089,7 @@ img.coldemail-bg {
   /* -- GetStarted -- */
   .getstarted { padding-top: 40px; padding-bottom: 60px; }
   .getstarted__box { padding: 20px 10px 0 10px; border-radius: 10px; }
-  .getstarted__box::before { border-radius: 10px; }
+  .getstarted__box::before { display: none; }
   .getstarted__heading { font-size: 32px; }
   .getstarted__left { padding: 40px 0px 20px; min-height: auto; }
   .getstarted__right { padding: 0; }
@@ -1133,7 +1119,7 @@ img.coldemail-bg {
 @media (max-width: 481px) {
   /* -- Header -- */
   .header { padding-top: 16px; }
-  .header__logo img { height: 40px !important; }
+  .header__logo img { height: auto; width: 210px; }
 
   /* -- Hero -- */
   .hero { padding-top: 40px; padding-bottom: 50px; }
@@ -1189,7 +1175,7 @@ img.coldemail-bg {
   .faq__question-text { font-size: 14px; }
 
   /* -- GetStarted -- */
-  .getstarted__box { padding: 25px 20px 0 20px; border-radius: 10px; }
+  .getstarted__box { padding: 0; border-radius: 10px; background: transparent; }
   .getstarted__heading { font-size: 22px; }
   .getstarted__desc { font-size: 14px; }
   .getstarted__left { padding: 28px 0px 20px; min-height: auto; }
