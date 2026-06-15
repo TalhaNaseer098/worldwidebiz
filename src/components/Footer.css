@@ -26,7 +26,7 @@
 .footer__top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 0;
 }
 
@@ -40,7 +40,7 @@
 .footer__logo {
   width: 345px;
   height: 81px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .footer__contacts {

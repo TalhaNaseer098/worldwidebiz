@@ -82,7 +82,7 @@
 
   .hero__subtext-wrap {
     gap: 1.875vw;
-    max-width: 31.927vw;
+    max-width: 32.552vw;
     padding: 2.552vw 0px 4.323vw;
   }
 
@@ -251,7 +251,9 @@
 
   .services__card::before { border-radius: 1.042vw; padding: 0.052vw; }
 
-  .services__card.services__card--large { padding: 3.021vw 2.344vw 2.396vw 5.208vw; }
+  .services__card.services__card--large {
+   padding: 3.021vw 2.344vw 2.396vw 2.083vw;
+  }
 
   .services__card--small .services__card-img-wrap { height: 10.417vw; padding: 1.042vw 1.042vw 0; }
   
@@ -289,7 +291,7 @@
   .services__cta-icon { width: 0.938vw; height: 0.938vw; }
 
   .services__grid-bottom .services__card {
-    padding: 2.29vw 2.08vw 2.08vw 2.08vw;
+    padding: 2.1875vw 2.1875vw 2.1875vw 2.1875vw;
 }
 
 .services__card--small .services__card-desc {
@@ -347,13 +349,17 @@
     -webkit-backdrop-filter: blur(1.198vw);
     border-radius: 1.042vw;
     padding: 1.302vw 1.042vw 2.083vw 1.25vw;
-    gap: 1.042vw;
+    gap: 2.188vw;
   }
   .process__card::before { border-radius: 1.042vw; padding: 0.052vw; }
   .process__card-icon { top: 1.042vw; right: 1.042vw; width: 1.875vw; }
   .process__card-title { font-size: 1.146vw; width: 13.958vw; }
   .process__card-item { gap: 0.625vw; font-size: 0.833vw; }
   .process__card-dot { width: 0.365vw; height: 0.365vw; }
+
+  .process__card-list {
+    gap: 0.156vw;
+}
 
   /* ----------------------------------------------------------
      Packages
@@ -404,17 +410,17 @@
   .faq__left { padding-top: 5vw; }
   .faq__icon { width: 3.854vw; height: 4.115vw; }
   .faq__heading { font-size: 3.646vw; margin-bottom: 1.042vw; }
-  .faq__desc { width: 26.042vw; font-size: 1.042vw; }
+  .faq__desc { width: 26vw; font-size: 1.042vw; }
   .faq__right { gap: 1.302vw; }
 
   .faq__item {
     backdrop-filter: blur(1.198vw);
     -webkit-backdrop-filter: blur(1.198vw);
     border-radius: 1.042vw;
-    padding: 1.25vw 1.25vw 1.25vw 2.292vw;
+    padding: 1.25vw;
   }
-  .faq__item::before { padding: 0.052vw; border: 0.052vw solid #008ef9; backdrop-filter: blur(1.198vw); border-radius: 0.521vw; }
-  .faq__question { gap: 0.833vw; padding: 1.146vw 0; transition: opacity 0.2s ease; }
+  .faq__item::before { padding: 0.052vw; backdrop-filter: blur(1.198vw); border-radius: 0.521vw; }
+  .faq__question { gap: 0.833vw; padding: 0; transition: opacity 0.2s ease; }
   .faq__question:hover { opacity: 0.85; }
   .faq__question-text { font-size: 0.938vw; }
 
@@ -443,22 +449,22 @@
     overflow: hidden;
     min-height: 0;
     opacity: 0;
-    padding-bottom: 0;
     transition: opacity 0.3s ease, padding-bottom 0.35s ease;
+    padding-top: 0;
   }
-  .faq__answer-wrap--open .faq__answer { opacity: 1; padding-bottom: 1.042vw; }
+  .faq__answer-wrap--open .faq__answer { opacity: 1; padding-top: 1.042vw; }
 
   /* ----------------------------------------------------------
      GetStarted
   ---------------------------------------------------------- */
-  .getstarted { padding-top: 5.208vw; padding-bottom: 6.25vw; }
+  .getstarted { padding-top: 1.823vw; padding-bottom: 6.25vw; }
   .getstarted__box { border-radius: 1.042vw; padding: 2.604vw 2.083vw 0 1.563vw; }
   .getstarted__box::before { border-radius: 1.042vw; padding: 0.052vw; }
-   .getstarted__left { padding: 4.167vw 3.125vw 0 4.167vw; min-height: 42vw; }
+   .getstarted__left { padding: 1.563vw 0vw 0vw 1.563vw; min-height: 42vw; }
   .getstarted__heading { width: 26.406vw; font-size: 3.646vw; margin-bottom: 1.25vw; }
   .getstarted__desc { width: 26.875vw; font-size: 1.042vw; }
   .getstarted__img { width: 32.708vw; height: 17.031vw; }
-  .getstarted__right { padding: 0 2.083vw 2.083vw 0; }
+  .getstarted__right { padding: 0 0vw 2.083vw 0; }
   .getstarted__form-header { padding: 2.083vw 2.083vw 1.042vw; }
   .getstarted__form-title { font-size: 1.875vw; margin-bottom: 0.625vw; letter-spacing: 0.104vw; }
   .getstarted__form-subtitle { font-size: 0.729vw; width: 22.917vw; }
@@ -468,13 +474,13 @@
   ---------------------------------------------------------- */
   .footer { padding-top: 3.125vw; }
   .footer__left { gap: 5.208vw; }
-  .footer__logo { width: 17.969vw; height: 4.219vw; }
+  .footer__logo { width: 17.969vw; height: auto; }
   .footer__contacts { gap: 1.042vw; }
   .footer__contact { gap: 0.729vw; }
   .footer__contact-label { font-size: 0.729vw; line-height: 0.938vw; }
   .footer__contact-value { font-size: 1.563vw; line-height: 1.979vw; }
-  .footer__right { gap: 5.208vw; }
-  .footer__nav { gap: 1.98vw 6.98vw; }
+  .footer__right { gap: 5vw; }
+  .footer__nav { gap: 1.40vw 6.98vw; }
   .footer__nav-link { font-size: 1.354vw; line-height: 1.667vw; }
   .footer__nav-link::after { bottom: -0.26vw; height: 0.104vw; border-radius: 0.104vw; }
   .footer__social-wrap { gap: 1.25vw; }
@@ -530,8 +536,8 @@
   /* ----------------------------------------------------------
      Global
   ---------------------------------------------------------- */
-  :root { --container: 80.729vw; }
-  .container { width: 80.729vw; }
+  :root { --container: 76.5625vw; }
+  .container { width: 76.5625vw; }
 
   /* ----------------------------------------------------------
      Policy Pages
@@ -651,9 +657,11 @@
 
   /* -- About -- */
   .about__label { font-size: 17px; }
-  .about__heading { font-size: 22px; width: auto; margin-bottom: 50px; }
+  .about__heading { font-size: 22px; width: auto; margin-bottom: 50px; max-width: 90%; }
   .about__cards { flex-wrap: wrap; justify-content: center; }
-  .about__card { width: calc(50% - 14px); flex-shrink: 1; }
+  .about__card { width: calc(50% - 14px); flex-shrink: 1;
+    padding: 40px 20px;
+   }
 
   /* -- Services -- */
   .services { padding-top: 200px; padding-bottom: 30px; }
@@ -663,9 +671,27 @@
   .services__grid-bottom .services__card { padding: 35px 20px; }
   .services__card.services__card--large { padding: 35px 20px; }
   .services__card-img--voice { width: 220px; height: auto; }
-  .services__card-img--outbound { width: 220px; height: auto; object-fit: contain; }
+  .services__card-img--outbound { width: 250px; height: auto; object-fit: contain; }
   .services__card-title { padding: 25px 0px 20px; }
   .services__card-desc { max-width: 100%; }
+
+  img.ailead-bg {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.services__card--small .services__card-img-wrap {
+    height: 160px;
+}
+
+img.coldemail-bg {
+    width: 90PX;
+    height: 60PX;
+}
 
   /* -- TechStack -- */
   .techstack { padding-top: 0px; padding-bottom: 100px; }

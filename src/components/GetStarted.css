@@ -9,6 +9,7 @@
   position: relative;
   display: flex;
   align-items: stretch;
+  height: 820px;
   background: linear-gradient(168.65deg, rgba(0, 0, 0, 0.8) -2.45%, rgba(22, 22, 22, 0.9) 102.09%);
   border-radius: 20px;
   overflow: hidden;
