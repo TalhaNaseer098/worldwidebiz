@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import logo from '../assets/imgfolder/worldwidebizlogo.png'
+import logo from '../assets/imgfolder/newheaderlogo.png'
 import phoneIcon from '../assets/imgfolder/phoneicon.png'
 
 export default function Header() {

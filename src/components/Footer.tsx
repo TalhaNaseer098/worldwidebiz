@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import footerLogo from '../assets/imgfolder/worldwidefooterlogo.png'
+import footerLogo from '../assets/imgfolder/newfooterlogo.png'
 import footerBgImg from '../assets/imgfolder/footerbottomimg.png'
 
 const navLinks = [
